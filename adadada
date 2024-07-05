@@ -1,0 +1,10 @@
+#include <stdio.h
+int x, b;
+main()
+{
+
+printf("ingresar x")
+scanf ("%d" , &x)
+
+system ("pause")
+}

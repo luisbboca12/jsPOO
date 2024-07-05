@@ -139,5 +139,6 @@ let luis_b12 = new Students({ name:"luis Barrionuevo",
      instagram:"luisb_12",
     twitter:"luisgg", })
 console.log(jS)
+console.log(luis_b12)
 
 jS.introducirUser(luis_b12)
