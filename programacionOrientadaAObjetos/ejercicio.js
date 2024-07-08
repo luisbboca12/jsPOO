@@ -8,8 +8,8 @@ class Students{
         twitter= undefined,
         gmail
     }){
-        this.name=name;
-        this.edad=edad;
+        this._name=name;
+        this._edad=edad;
         this.platziID=platziID;
         this.rutas=rutas;
         this.socialMedia={
@@ -17,8 +17,28 @@ class Students{
             gmail,
             twitter
         }
+        
 
 
+    }
+    get name(){
+        return this._name
+    }
+    set name(newName){
+        if (newName != name) {
+            console.error("no puedes cambiar el nombre")
+            
+        }else{
+            console.warn("Porque intentas reasignar tu nombre? Okey lo hare pero es el mismo y no puedes cambiarlo por aca")
+            this._name=newName
+        }
+        
+    }
+    get edad(){
+        return this._edad
+    }
+    set edad(newEdad){
+        this._edad= newEdad
     }
     meterRuta(ruta){
         this.rutas.push(ruta)
@@ -109,15 +129,6 @@ let ventajasDeLaPOO = new Clases({
     }
 })
 
-// let luis= new Students({
-//     name:"luis Barrionuevo",
-//     edad:24,
-//     platziID:37427,
-//     twitter:"luis_b12",
-//     gmail:"Luisito.barrionuevo@gmail.com",
-//     materiasAprobadas:[programacionUno,orgEmpresarial]
-// })
-// ventajasDeLaPOO.agregarHilos("pedrito33","no me gusto una mierda el curso")
 
 
 
@@ -140,5 +151,7 @@ let luis_b12 = new Students({ name:"luis Barrionuevo",
     twitter:"luisgg", })
 console.log(jS)
 console.log(luis_b12)
+// luis_b12.edad= 29
+
 
 jS.introducirUser(luis_b12)
