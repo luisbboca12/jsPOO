@@ -1,4 +1,4 @@
-class Students{
+export class Students{
     constructor({
         name,
         edad,
@@ -45,7 +45,7 @@ class Students{
     }
 }
 
-class RutasDeAprendisaje{
+export class RutasDeAprendisaje{
     constructor({
         nombre,
         cursos=[],
@@ -65,7 +65,7 @@ class RutasDeAprendisaje{
 
 
 
-class Curso{
+export class Curso{
     constructor(
         {
          nombre,
@@ -82,7 +82,7 @@ class Curso{
         this.clases.push(clase)
     }
 }
-class Clases{
+ export class Clases{
     constructor({
         nombre,
         fechaPublicacion,
